@@ -2,4 +2,4 @@ streamlit
 numpy
 tensorflow
 joblib
-sklearn
+scikit-learn
