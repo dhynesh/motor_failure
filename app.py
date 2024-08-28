@@ -8,8 +8,8 @@ import os
 st.set_page_config(page_title="Motor Failure Prediction", page_icon="⚙️", layout="wide")
 
 # Define the correct paths for the model and scaler
-model_path = r'C:\Users\dhyne\OneDrive\Desktop\motar_failure\my_model (1).keras'
-scaler_path = r'C:\Users\dhyne\OneDrive\Desktop\motar_failure\scaler (1).pkl'
+model_path = 'motar_failure\my_model (1).keras'
+scaler_path = 'motar_failure\scaler (1).pkl'
 
 # Load the model using TensorFlow
 if os.path.exists(model_path):
