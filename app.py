@@ -8,8 +8,8 @@ import os
 st.set_page_config(page_title="Motor Failure Prediction", page_icon="⚙️", layout="wide")
 
 # Define the correct paths for the model and scaler
-model_path = 'my_model (1).keras'
-scaler_path = 'scaler (1).pkl'
+model_path = r'C:\Users\dhyne\OneDrive\Desktop\motar_failure\my_model (1).keras'
+scaler_path = r'C:\Users\dhyne\OneDrive\Desktop\motar_failure\scaler (1).pkl'
 
 # Load the model using TensorFlow
 if os.path.exists(model_path):
@@ -59,7 +59,8 @@ if st.button("🔍 Predict Motor Failure"):
     st.write(f"Received inputs - X: {x_input}, Y: {y_input}, Z: {z_input}")
 
     input_data = np.array([[x_input, y_input, z_input]])
-    
+    st.write(f"Input data: {input_data}")
+
     # Scale the input data
     try:
         input_data_scaled = scaler.transform(input_data)
